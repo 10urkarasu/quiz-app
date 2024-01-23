@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/getQuestions": {
+      "handler": "api/getQuestions.js"
+    }
+  }
+}
