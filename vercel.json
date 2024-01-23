@@ -1,7 +1,28 @@
 {
+<<<<<<< HEAD
   "functions": {
     "api/getQuestions": {
       "handler": "api/getQuestions.js"
     }
   }
+=======
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "build" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+>>>>>>> 91756df47bc17420b4688ef8e17e8c2d37c666dc
 }
