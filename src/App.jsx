@@ -23,6 +23,8 @@ function reducer(state, action) {
       return { ...state, questions: action.payload, status: "ready" };
     case "dataFailed":
       return { ...state, status: "error" };
+    case "restart":
+      return { ...state, index: 0, answer: null, points: 0, status: "ready" };
     case "start":
       return { ...state, status: "active" };
     case "newAnswer":
@@ -99,6 +101,7 @@ export default function App() {
             points={points}
             maxPossiblePoints={maxPossiblePoints}
             highScore={highScore}
+            dispatch={dispatch}
           />
         )}
       </Main>
