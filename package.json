@@ -19,7 +19,7 @@
   "eject": "react-scripts eject",
   "start-server": "json-server --watch data/questions.json --port 8000",
   "start-dev": "concurrently \"npm start\" \"npm run start-server\""
-}
+},
   "eslintConfig": {
     "extends": [
       "react-app",
